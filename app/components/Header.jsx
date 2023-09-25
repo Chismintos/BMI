@@ -3,7 +3,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className='bg-blue-700 text-black '>
+    <header className='bg-green-900 text-black '>
       <div className='container mx-auto p-1'>
         <div className='flex justify-between items-center text-white font-bold ml-3 mr-3 h-12' >
           <div className='flex justify-center space-x-2 '>
@@ -17,7 +17,7 @@ const Header = () => {
             />
             
           </div>
-          <nav className='flex list-none space-x-6 text-[14px] font-arial '>
+          <nav className=' flex list-none space-x-6 text-[14px] font-arial '>
               <li className='text-sm hover:underline'>Registro para Vacunacion</li>
               <li className='text-sm hover:underline'>Informacion sobre COVID-19</li>
               <li className='text-sm hover:underline'>Tramites</li>
