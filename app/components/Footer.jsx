@@ -15,7 +15,7 @@ export const Footer = () => {
               height={300} // Ajusta el alto del logo aquí
               alt="logo pagina"
               style={{
-                width: '100%', // Establece el ancho máximo al 100%
+                width: '80%', // Establece el ancho máximo al 100%
               }}
               priority
             />

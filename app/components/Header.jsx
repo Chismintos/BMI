@@ -12,7 +12,7 @@ const Header = () => {
               src={'logoheader.svg'} 
               width={200} height={200} 
               alt="logo pagina" 
-              style={{width:110, height:110}}
+              style={{width:110, height:100}}
               priority
             />
             
