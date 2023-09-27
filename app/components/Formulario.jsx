@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 
 const Formulario = ({setResultado, setError}) => {
+  
+  // Almacena la estatura y peso del usuario como una cadena vacía inicialmente.
   const [estatura, setEstatura] = useState('');
   const [peso, setPeso] = useState('');
+  //Almacena un valor booleano inicializado en false.
   const [errorFormulario, setErrorFormulario] = useState(false)
-
 
   const buttonHandler = (e) => {
     e.preventDefault();
@@ -16,6 +18,7 @@ const Formulario = ({setResultado, setError}) => {
     }
 
     setErrorFormulario(false)
+    //del destructuring
     setResultado(peso/((estatura/100)*(estatura/100)));
     setError(false)
   }
@@ -31,14 +34,14 @@ const Formulario = ({setResultado, setError}) => {
     <div >
         <form className='flex flex-col items-center space-y-5 border border-gray-300 p-5 rounded-md '>
             
-            {errorFormulario  && <div className='bg-red-500 rounded-md font-bold  '> ERROR DEBES LLENAR LOS CAMPOS</div> }
+            {errorFormulario && <div className='bg-red-500 rounded-md font-bold  '> ERROR DEBES LLENAR LOS CAMPOS</div> }
 
             <div className='flex flex-col w-full'>
-                <label htmlFor='' className='uppercase font-bold' >Estatura</label>
+                <label htmlFor='' className='uppercase font-bold'>Estatura</label>
                 <input 
                     type="number" 
                     placeholder='Estatura en cm' 
-                    className='bg-green-200 p-2 rounded-md'
+                    className='bg-green-200 p-2 rounded-md ' 
                     value={estatura}
                     onChange={e => setEstatura(e.target.value)}
                     
